@@ -5,7 +5,9 @@ import org.springframework.context.annotation.Primary;
 
 import javax.persistence.*;
 import java.util.ArrayList;
+import java.util.HashSet;
 import java.util.List;
+import java.util.Set;
 
 @Entity
 @Table(name = "user")
@@ -30,6 +32,15 @@ public class User {
 	@JoinColumn(name = "orgUserName", referencedColumnName = "username")
 	List<Organization> organizations = new ArrayList<>();
 
+	@OneToMany(cascade = CascadeType.ALL)
+	@JoinColumn(name = "username", referencedColumnName = "username")
+	List<Invitation> invitations = new ArrayList<>();
+
+//	@ManyToMany(cascade = CascadeType.ALL)
+//	@JoinColumn(name = "orgUserName", referencedColumnName = "username")
+//	List<Organization> organizations = new ArrayList<>();
+
+
 	public User() {
 	}
 
@@ -40,6 +51,13 @@ public class User {
 		this.lastname = lastname;
 	}
 
+	public List<Invitation> getInvitations() {
+		return invitations;
+	}
+
+	public void setInvitations(List<Invitation> invitations) {
+		this.invitations = invitations;
+	}
 
 	public List<Organization> getOrganizations() {
 		return organizations;

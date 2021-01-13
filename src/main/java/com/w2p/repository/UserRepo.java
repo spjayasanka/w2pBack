@@ -9,5 +9,6 @@ import com.w2p.model.entity.User;
 public interface UserRepo extends CrudRepository<User, Integer> {
 	
 	User findByUsername(String username);
+	User findByUsernameIgnoreCase(String username);
 	
 }
