@@ -8,6 +8,7 @@ import org.springframework.security.core.Authentication;
 import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.web.bind.annotation.*;
 
+import javax.servlet.http.HttpServletRequest;
 import java.util.List;
 
 @RestController
@@ -17,9 +18,9 @@ public class InvitationController {
     InvitationService invitationService;
 
     @PostMapping(value = "/saveInvitation")
-    public Invitation saveInvitation(@RequestBody InvitationDto invitationDto) {
+    public Invitation saveInvitation(@RequestBody InvitationDto invitationDto, HttpServletRequest request) {
         System.out.println("test controller");
-        return invitationService.addInvitation(invitationDto);
+        return invitationService.addInvitation(invitationDto, request);
     }
 
     @GetMapping(value = "/getInvitationByMemberEmail/{username}")
@@ -37,6 +38,11 @@ public class InvitationController {
     public Invitation updateStatus(@RequestBody InvitationDto invitationDto){
         System.out.println("update tested");
         return invitationService.changeStatus(invitationDto);
+    }
+
+    @DeleteMapping(value = "/deleteInvitationById/{id}")
+    public void deleteInvitationById(@PathVariable("id") Integer id){
+        invitationService.deleteInvitationById(id);
     }
 
 }

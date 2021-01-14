@@ -39,4 +39,9 @@ public class OrganizationController {
 
         return organizationService.getOrganizationByIdAndOrgUserName(id, currentPrincipalName);
     }
+
+    @DeleteMapping(value = "/deleteOrganizationById/{id}")
+    public void deleteOrganizationById (@PathVariable("id") Integer id) {
+        organizationService.deleteOrganizationById(id);
+    }
 }

@@ -1,24 +1,18 @@
 package com.w2p.service;
 
 import com.w2p.model.dto.InvitationDto;
-import com.w2p.model.entity.Confirmation;
 import com.w2p.model.entity.Invitation;
 import com.w2p.repository.ConfirmationRepo;
 import com.w2p.repository.InvitationRepo;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.beans.factory.annotation.Value;
 import org.springframework.mail.SimpleMailMessage;
-import org.springframework.scheduling.annotation.Async;
 import org.springframework.security.core.Authentication;
 import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.stereotype.Service;
 import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.servlet.ModelAndView;
 
-import javax.mail.PasswordAuthentication;
-import javax.mail.Session;
+import javax.servlet.http.HttpServletRequest;
 import java.util.List;
-import java.util.Properties;
 
 @Service
 public class InvitationService {
@@ -33,7 +27,7 @@ public class InvitationService {
 
 //    this method is used for add an invitation
 
-    public Invitation addInvitation(InvitationDto invitationDto) {
+    public Invitation addInvitation(InvitationDto invitationDto, HttpServletRequest request) {
         Invitation invitation = new Invitation();
 
         invitation.setMemberEmail(invitationDto.getMemberEmail());
@@ -51,12 +45,21 @@ public class InvitationService {
         mailMessage.setTo(invitationDto.getMemberEmail());
         mailMessage.setFrom("spjartz@gmail.com");
         mailMessage.setSubject("Invitation for add to my organization");
-        mailMessage.setText("hello, I am inviting you to join my organization. Click the link to login or Register " + "http://localhost:4200/login");
+
+        String msg = "Hello, " + currentPrincipalName + " is inviting you to join his/her organization "
+                + " Please register using this email to join to organization " + " http://localhost:4200/home";
+        mailMessage.setText(msg);
+//        mailMessage.setText("hello, I am inviting you to join my organization. Click the link to login or Register " + "http://localhost:4200/login");
+
+//        System.out.println("tested URL : " + request.getRequestURL().toString());
+
 
         emailService.sendEmail(mailMessage);
 
         return invitationRepo.save(invitation);
     }
+
+
     //this method is used for update invitation status
 
     public Invitation changeStatus(InvitationDto invitationDto){
@@ -81,6 +84,16 @@ public class InvitationService {
     public List<Invitation> findInvitationByOrganizationId(Integer organizationId){
         return invitationRepo.findByOrganizationId(organizationId);
     }
+
+    public void deleteInvitationById (Integer id) {
+        invitationRepo.deleteById(id);
+    }
+
+
+
+
+
+
 
 //    public Invitation saveInvitation(Invitation invitation) {
 //

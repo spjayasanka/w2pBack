@@ -40,4 +40,8 @@ public class JwtUserDetailsService implements UserDetailsService {
 		newUser.setLastname(user.getLastname());
 		return userRepo.save(newUser);
 	}
+
+	public User getUserByUsername(String username){
+		return userRepo.findByUsername(username);
+	}
 }

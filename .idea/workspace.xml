@@ -2,45 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2e76583f-ec22-47ef-a74e-00d143afdb7a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_activation_activation_1_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_mail_javax_mail_api_1_6_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_attoparser_attoparser_2_0_5_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_mail_2_1_1_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_thymeleaf_2_1_1_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_context_support_5_1_3_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_thymeleaf_extras_thymeleaf_extras_java8time_3_0_2_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_thymeleaf_thymeleaf_3_0_11_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_thymeleaf_thymeleaf_spring5_3_0_11_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_unbescape_unbescape_1_1_6_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/w2p/controller/ConfirmationToken.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/w2p/controller/InvitationController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/w2p/controller/UserOrganizationController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/w2p/model/dto/ConfirmationDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/w2p/model/dto/InvitationDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/w2p/model/dto/UserOrganizationsDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/w2p/model/entity/Confirmation.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/w2p/model/entity/Invitation.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/w2p/model/entity/UserOrganizations.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/w2p/repository/ConfirmationRepo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/w2p/repository/InvitationRepo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/w2p/repository/UserOrganizationRepo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/w2p/service/ConfirmationService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/w2p/service/EmailService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/w2p/service/InvitationService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/w2p/service/UserOrganizationService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-boot-jwt.iml" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot-jwt.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/w2p/model/entity/Organization.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/w2p/model/entity/Organization.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/w2p/model/entity/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/w2p/model/entity/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/w2p/repository/UserRepo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/w2p/repository/UserRepo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/w2p/controller/HelloWorldController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/w2p/controller/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/w2p/controller/InvitationController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/w2p/controller/InvitationController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/w2p/controller/OrganizationController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/w2p/controller/OrganizationController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/w2p/service/InvitationService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/w2p/service/InvitationService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/w2p/service/JwtUserDetailsService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/w2p/service/JwtUserDetailsService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/w2p/service/OrganizationService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/w2p/service/OrganizationService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/w2p/model/entity/Organization.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/w2p/model/entity/Organization.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/w2p/model/entity/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/w2p/model/entity/User.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/w2p/repository/UserRepo.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/w2p/repository/UserRepo.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/w2p/controller/HelloWorldController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/w2p/controller/InvitationController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/w2p/controller/InvitationController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/w2p/controller/OrganizationController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/w2p/controller/OrganizationController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/w2p/service/InvitationService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/w2p/service/InvitationService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/w2p/service/JwtUserDetailsService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/w2p/service/JwtUserDetailsService.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/w2p/service/OrganizationService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/w2p/service/OrganizationService.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
@@ -90,41 +63,42 @@
       <usages-collector id="statistics.lifecycle.project">
         <counts>
           <entry key="project.open.time.2" value="1" />
+          <entry key="project.open.time.20" value="1" />
           <entry key="project.open.time.21" value="1" />
           <entry key="project.open.time.31" value="1" />
           <entry key="project.open.time.7" value="1" />
-          <entry key="project.opened" value="4" />
+          <entry key="project.opened" value="5" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="dummy" value="3" />
-          <entry key="java" value="5055" />
-          <entry key="properties" value="197" />
+          <entry key="dummy" value="17" />
+          <entry key="java" value="5779" />
+          <entry key="properties" value="203" />
           <entry key="xml" value="7" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="5055" />
-          <entry key="PLAIN_TEXT" value="3" />
-          <entry key="Properties" value="197" />
+          <entry key="JAVA" value="5779" />
+          <entry key="PLAIN_TEXT" value="17" />
+          <entry key="Properties" value="203" />
           <entry key="XML" value="7" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="class" value="2" />
-          <entry key="java" value="108" />
-          <entry key="properties" value="12" />
+          <entry key="java" value="121" />
+          <entry key="properties" value="15" />
           <entry key="xml" value="4" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="CLASS" value="2" />
-          <entry key="JAVA" value="108" />
-          <entry key="Properties" value="12" />
+          <entry key="JAVA" value="121" />
+          <entry key="Properties" value="15" />
           <entry key="XML" value="4" />
         </counts>
       </usages-collector>
@@ -135,8 +109,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/w2p/service/InvitationService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="53" column="147" selection-start-line="53" selection-start-column="147" selection-end-line="53" selection-end-column="147" />
+            <state relative-caret-position="240">
+              <caret line="49" column="109" selection-start-line="49" selection-start-column="109" selection-end-line="49" selection-end-column="109" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -147,8 +121,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/w2p/controller/InvitationController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="552">
-              <caret line="31" column="41" selection-start-line="31" selection-start-column="41" selection-end-line="31" selection-end-column="41" />
+            <state relative-caret-position="792">
+              <caret line="42" column="49" selection-start-line="42" selection-start-column="29" selection-end-line="42" selection-end-column="49" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -157,13 +131,28 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/w2p/repository/InvitationRepo.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/w2p/model/entity/Invitation.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="192">
-              <caret line="13" column="63" selection-start-line="13" selection-start-column="63" selection-end-line="13" selection-end-column="63" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="264">
+              <caret line="11" column="11" selection-start-line="11" selection-start-column="11" selection-end-line="11" selection-end-column="11" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/w2p/controller/UserController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="384">
+              <caret line="21" column="63" selection-start-line="21" selection-start-column="63" selection-end-line="21" selection-end-column="63" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="120">
+              <caret line="5" column="41" selection-start-line="5" selection-start-column="41" selection-end-line="5" selection-end-column="41" />
             </state>
           </provider>
         </entry>
@@ -197,11 +186,8 @@
         <option value="$PROJECT_DIR$/src/main/java/com/javainuse/model/entity/User.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/javainuse/config/WebSecurityConfig.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/javainuse/service/JwtUserDetailsService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/w2p/service/JwtUserDetailsService.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/w2p/model/dto/OrganizationDto.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/w2p/repository/OrganizationRepo.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/w2p/controller/OrganizationController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/w2p/model/entity/Invitation.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/w2p/repository/UserRepo.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/w2p/repository/ConfirmationRepo.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/w2p/model/entity/Confirmation.java" />
@@ -212,15 +198,19 @@
         <option value="$PROJECT_DIR$/src/main/java/com/w2p/model/entity/Organization.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/w2p/model/entity/User.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/w2p/repository/UserOrganizationRepo.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/w2p/service/OrganizationService.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/application.properties" />
         <option value="$PROJECT_DIR$/src/main/java/com/w2p/controller/UserOrganizationController.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/w2p/model/entity/UserOrganizations.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/w2p/model/dto/UserOrganizationsDto.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/w2p/service/UserOrganizationService.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/w2p/model/dto/InvitationDto.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/w2p/repository/InvitationRepo.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/w2p/service/OrganizationService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/w2p/controller/OrganizationController.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/w2p/controller/InvitationController.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/application.properties" />
+        <option value="$PROJECT_DIR$/src/main/java/com/w2p/service/JwtUserDetailsService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/w2p/controller/UserController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/w2p/model/entity/Invitation.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/w2p/service/InvitationService.java" />
       </list>
     </option>
@@ -273,6 +263,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
       <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
@@ -389,7 +380,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -399,7 +389,7 @@
     <property name="RequestMappingsPanelWidth1" value="75" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1610466904485" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1610561201906" />
     <property name="ignore_missing_gitignore" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
@@ -456,17 +446,19 @@
       <workItem from="1609831543170" duration="42667000" />
       <workItem from="1610287624346" duration="29026000" />
       <workItem from="1610470201649" duration="6442000" />
-      <workItem from="1610520386129" duration="1164000" />
+      <workItem from="1610520386129" duration="13137000" />
+      <workItem from="1610596028469" duration="589000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="81765000" />
+    <option name="totallyTimeSpent" value="94327000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-6" y="1" width="1550" height="838" extended-state="6" />
+    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.19530201" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.19798657" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -549,13 +541,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/w2p/repository/UserRepo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="60" selection-start-line="8" selection-start-column="60" selection-end-line="8" selection-end-column="60" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/w2p/repository/ConfirmationRepo.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="216">
@@ -584,13 +569,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/w2p/controller/HelloWorldController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="123">
-          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/w2p/config/JwtRequestFilter.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="320">
@@ -602,34 +580,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="48">
           <caret line="2" column="32" selection-start-line="2" selection-start-column="32" selection-end-line="2" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/w2p/model/entity/Confirmation.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="264">
-          <caret line="36" column="57" selection-start-line="36" selection-start-column="57" selection-end-line="36" selection-end-column="57" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/w2p/config/WebSecurityConfig.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="56" column="98" selection-start-line="56" selection-start-column="98" selection-end-line="56" selection-end-column="98" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/w2p/service/JwtUserDetailsService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="147">
-          <caret line="37" column="38" lean-forward="true" selection-start-line="37" selection-start-column="38" selection-end-line="37" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/w2p/controller/OrganizationController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="386">
-          <caret line="33" column="59" selection-start-line="33" selection-start-column="26" selection-end-line="33" selection-end-column="59" />
         </state>
       </provider>
     </entry>
@@ -683,13 +633,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/w2p/model/entity/Invitation.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="632">
-          <caret line="30" column="32" selection-start-line="30" selection-start-column="32" selection-end-line="30" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/w2p/model/dto/InvitationDto.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="456">
@@ -711,13 +654,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/w2p/controller/JwtAuthenticationController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-480">
-          <caret line="24" column="13" selection-start-line="24" selection-start-column="13" selection-end-line="24" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/w2p/model/dto/UserDTO.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
@@ -732,24 +668,77 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/w2p/service/OrganizationService.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/w2p/repository/InvitationRepo.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="192">
-          <caret line="45" column="5" selection-start-line="45" selection-start-column="5" selection-end-line="45" selection-end-column="5" />
+          <caret line="13" column="63" selection-start-line="13" selection-start-column="63" selection-end-line="13" selection-end-column="63" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/w2p/service/OrganizationService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-24">
-          <caret line="5" column="41" selection-start-line="5" selection-start-column="41" selection-end-line="5" selection-end-column="41" />
+        <state relative-caret-position="272">
+          <caret line="48" column="40" selection-start-line="48" selection-start-column="40" selection-end-line="48" selection-end-column="40" />
+          <folding>
+            <element signature="e#1705#1706#0" expanded="true" />
+            <element signature="e#1736#1737#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/w2p/config/WebSecurityConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="56" column="91" lean-forward="true" selection-start-line="56" selection-start-column="91" selection-end-line="56" selection-end-column="91" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/w2p/model/entity/Confirmation.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="264">
+          <caret line="36" column="57" selection-start-line="36" selection-start-column="57" selection-end-line="36" selection-end-column="57" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/w2p/repository/UserRepo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="60" selection-start-line="8" selection-start-column="60" selection-end-line="8" selection-end-column="60" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/w2p/service/JwtUserDetailsService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="222">
+          <caret line="43" column="33" selection-start-line="43" selection-start-column="16" selection-end-line="43" selection-end-column="33" />
+          <folding>
+            <element signature="e#1470#1471#0" expanded="true" />
+            <element signature="e#1491#1492#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/w2p/controller/JwtAuthenticationController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-663">
+          <caret line="24" column="13" selection-start-line="24" selection-start-column="13" selection-end-line="24" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/w2p/controller/OrganizationController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="609">
+          <caret line="43" column="65" selection-start-line="43" selection-start-column="65" selection-end-line="43" selection-end-column="65" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/w2p/service/InvitationService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="53" column="147" selection-start-line="53" selection-start-column="147" selection-end-line="53" selection-end-column="147" />
+        <state relative-caret-position="240">
+          <caret line="49" column="109" selection-start-line="49" selection-start-column="109" selection-end-line="49" selection-end-column="109" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -758,21 +747,32 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/w2p/controller/InvitationController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="552">
-          <caret line="31" column="41" selection-start-line="31" selection-start-column="41" selection-end-line="31" selection-end-column="41" />
+        <state relative-caret-position="792">
+          <caret line="42" column="49" selection-start-line="42" selection-start-column="29" selection-end-line="42" selection-end-column="49" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/w2p/repository/InvitationRepo.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/w2p/model/entity/Invitation.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="192">
-          <caret line="13" column="63" selection-start-line="13" selection-start-column="63" selection-end-line="13" selection-end-column="63" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="264">
+          <caret line="11" column="11" selection-start-line="11" selection-start-column="11" selection-end-line="11" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/w2p/controller/UserController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="384">
+          <caret line="21" column="63" selection-start-line="21" selection-start-column="63" selection-end-line="21" selection-end-column="63" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="5" column="41" selection-start-line="5" selection-start-column="41" selection-end-line="5" selection-end-column="41" />
         </state>
       </provider>
     </entry>

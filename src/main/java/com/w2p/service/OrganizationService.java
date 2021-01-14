@@ -45,4 +45,8 @@ public class OrganizationService {
         return organizationRepo.getOrganizationByIdAndOrgUserName(id, orgUserName);
     }
 
+    public void deleteOrganizationById(Integer id) {
+        organizationRepo.deleteById(id);
+    }
+
 }
