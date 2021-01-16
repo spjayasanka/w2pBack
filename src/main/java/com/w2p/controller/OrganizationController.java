@@ -2,6 +2,7 @@ package com.w2p.controller;
 
 import com.w2p.model.dto.OrganizationDto;
 import com.w2p.model.entity.Organization;
+import com.w2p.model.entity.UserOrganizations;
 import com.w2p.service.OrganizationService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.Authentication;
@@ -43,5 +44,10 @@ public class OrganizationController {
     @DeleteMapping(value = "/deleteOrganizationById/{id}")
     public void deleteOrganizationById (@PathVariable("id") Integer id) {
         organizationService.deleteOrganizationById(id);
+    }
+
+    @GetMapping(value = "/findUserOrganizationsByOrganizationId/{organizationId}")
+    public  List<UserOrganizations> findUserOrganizationsByOrganizationId(@PathVariable("organizationId") Integer organizationId) {
+        return organizationService.findUsersInOrganization(organizationId);
     }
 }

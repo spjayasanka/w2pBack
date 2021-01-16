@@ -1,7 +1,9 @@
 package com.w2p.model.entity;
 
 import javax.persistence.*;
+import java.util.ArrayList;
 import java.util.HashSet;
+import java.util.List;
 import java.util.Set;
 
 @Entity
@@ -18,6 +20,13 @@ public class Organization {
 
     @Column(name = "orgUserName")
     private String orgUserName;
+
+    @OneToMany(cascade = CascadeType.ALL)
+    @JoinColumn(name = "organizationId", referencedColumnName = "id")
+    List<UserOrganizations> newOrganizations = new ArrayList<>();
+
+//    @ManyToMany(fetch = FetchType.LAZY, cascade = CascadeType.ALL, mappedBy = "user")
+//    private Set<User> newUser = new HashSet<>();
 
     public Organization() {
     }

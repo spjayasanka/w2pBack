@@ -11,8 +11,10 @@ public class UserOrganizations {
     @GeneratedValue(strategy = GenerationType.AUTO)
     private int id;
 
+
     @Column
     private int organizationId;
+
 
     @Column
     private String username;

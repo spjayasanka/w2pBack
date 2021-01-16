@@ -36,9 +36,9 @@ public class User {
 	@JoinColumn(name = "username", referencedColumnName = "username")
 	List<Invitation> invitations = new ArrayList<>();
 
-//	@ManyToMany(cascade = CascadeType.ALL)
-//	@JoinColumn(name = "orgUserName", referencedColumnName = "username")
-//	List<Organization> organizations = new ArrayList<>();
+	@OneToMany(cascade = CascadeType.ALL)
+	@JoinColumn(name = "username", referencedColumnName = "username")
+	List<UserOrganizations> newOrganizations = new ArrayList<>();
 
 
 	public User() {
