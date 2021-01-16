@@ -47,7 +47,7 @@ public class InvitationService {
         mailMessage.setSubject("Invitation for add to my organization");
 
         String msg = "Hello, " + currentPrincipalName + " is inviting you to join his/her organization "
-                + " Please register using this email to join to organization " + " http://localhost:4200/home";
+                + " Please register using this email to join to organization " + " http://localhost:8080/front";
         mailMessage.setText(msg);
 //        mailMessage.setText("hello, I am inviting you to join my organization. Click the link to login or Register " + "http://localhost:4200/login");
 
@@ -140,12 +140,7 @@ public class InvitationService {
 //        }
 //        return invitation;
 //    }
-
-
-    @GetMapping(value = "/confirm-account")
-    public String showSomthing(){
-        return "link worked";
-    }
+    
 
 //end of the class
 }
