@@ -2,10 +2,11 @@ package com.w2p.service;
 
 import com.w2p.model.dto.InvitationDto;
 import com.w2p.model.entity.Invitation;
-import com.w2p.repository.ConfirmationRepo;
 import com.w2p.repository.InvitationRepo;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.mail.SimpleMailMessage;
+import org.springframework.mail.javamail.JavaMailSender;
+import org.springframework.mail.javamail.MimeMessageHelper;
+import org.springframework.mail.javamail.MimeMessagePreparator;
 import org.springframework.security.core.Authentication;
 import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.stereotype.Service;
@@ -19,10 +20,10 @@ public class InvitationService {
     InvitationRepo invitationRepo;
 
     @Autowired
-    ConfirmationRepo confirmationRepo;
+    EmailService emailService;
 
     @Autowired
-    EmailService emailService;
+    private JavaMailSender mailSender;
 
 //    this method is used for add an invitation
 
@@ -40,20 +41,34 @@ public class InvitationService {
         invitation.setUsername(currentPrincipalName);
 
         //send email for invitation
-        SimpleMailMessage mailMessage = new SimpleMailMessage();
-        mailMessage.setTo(invitationDto.getMemberEmail());
-        mailMessage.setFrom("spjartz@gmail.com");
-        mailMessage.setSubject("Invitation for add to my organization");
+//        SimpleMailMessage mailMessage = new SimpleMailMessage();
+//
+//
+//        mailMessage.setTo(invitationDto.getMemberEmail());
+//        mailMessage.setFrom("spjartz@gmail.com");
+//        mailMessage.setSubject("Invitation for add to my organization");
+//
+        String msg = "Hello, <br> " + currentPrincipalName + " is inviting you to join his/her organization "
+                + " Please register/login using your email to join organization " +"<br><br>" + "<a href=\"http://localhost:4200/login\"> <button>JOIN</button></a>";
+//        mailMessage.setText(msg);
 
-        String msg = "Hello, " + currentPrincipalName + " is inviting you to join his/her organization "
-                + " Please register using this email to join to organization " + " http://localhost:8080/front";
-        mailMessage.setText(msg);
+
+        MimeMessagePreparator preparator = message -> {
+            MimeMessageHelper helper = new MimeMessageHelper(message, MimeMessageHelper.MULTIPART_MODE_MIXED, "UTF-8");
+            helper.setFrom("spjartz@gmail.com");
+            helper.setTo(invitationDto.getMemberEmail());
+            helper.setSubject("Sample Subject");
+            helper.setText(msg, true);
+        };
+
+        mailSender.send(preparator); //send the email
+
+
 //        mailMessage.setText("hello, I am inviting you to join my organization. Click the link to login or Register " + "http://localhost:4200/login");
-
 //        System.out.println("tested URL : " + request.getRequestURL().toString());
 
 
-        emailService.sendEmail(mailMessage);
+//        emailService.sendEmail(mailMessage);
 
         return invitationRepo.save(invitation);
     }

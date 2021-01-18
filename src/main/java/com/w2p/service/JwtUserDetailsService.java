@@ -1,7 +1,10 @@
 package com.w2p.service;
 
 import java.util.ArrayList;
+import java.util.List;
 
+import com.w2p.model.entity.UserOrganizations;
+import com.w2p.repository.UserOrganizationRepo;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UserDetailsService;
@@ -21,6 +24,9 @@ public class JwtUserDetailsService implements UserDetailsService {
 
 	@Autowired
 	private PasswordEncoder bcryptEncoder;
+
+	@Autowired
+    private UserOrganizationRepo userOrganizationRepo;
 
 	@Override
 	public UserDetails loadUserByUsername(String username) throws UsernameNotFoundException {
@@ -44,4 +50,12 @@ public class JwtUserDetailsService implements UserDetailsService {
 	public User getUserByUsername(String username){
 		return userRepo.findByUsername(username);
 	}
+
+    public List<UserOrganizations> findOrganizationsOfUser(String username) {
+        System.out.println(username);
+//        return userOrganizationRepo.findUserOrganizationsByUsername(username);
+        return userOrganizationRepo.findUserOrganizationsByUsername(username);
+    }
+
+
 }
